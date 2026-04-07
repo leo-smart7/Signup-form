@@ -4,42 +4,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./output.css">
   <title>Frontend Mentor | Intro component with sign up form</title>
-
 </head>
 
-<body>
+<body class="bg-[url('./images/bg-intro-desktop.png')] bg-cover bg-center bg-[#FF7979]">
 
-  <h1>Learn to code by watching others</h1>
+  <div class="text-white">
+    <h1 class="text-3xl font-bold font-['Poppins']">Learn to code by watching others</h1>
 
-  <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
-    but understanding how developers think is invaluable.</p>
+    <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+      but understanding how developers think is invaluable.</p>
+  </div>
 
   <div>
-    <p>Try it free 7 days then $20/mo. thereafter</p>
+
+    <div class="bg-purple-700 inline-block">
+      <p>Try it free 7 days then $20/mo. thereafter</p>
+    </div>
+    <form class="bg-white">
+      <div>
+        <input type="text" placeholder="First Name">
+      </div>
+      <div>
+        <input type="text" placeholder="Last Name">
+      </div>
+      <div>
+        <input type="email" placeholder="Email Address">
+      </div>
+      <div>
+        <input type="password" placeholder="Password">
+      </div>
+
+      <button>Claim your free trial</button>
+      <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+    </form>
+
   </div>
-  <form action="">
-    <div>
-      <input type="text" placeholder="First Name">
-    </div>
-    <div>
-      <input type="text" placeholder="Last Name">
-    </div>
-    <div>
-      <input type="email" placeholder="Email Address">
-    </div>
-    <div>
-      <input type="password" placeholder="Password">
-    </div>
-
-    <button>Claim your free trial</button>
-  </form>
-
-  <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
 
 </body>
 
